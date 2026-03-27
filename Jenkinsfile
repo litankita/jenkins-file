@@ -1,7 +1,6 @@
 pipeline{
 	agent any
 		stages{
-			parallel{
 				stage('fetch the code')
 				{
 				    steps{
@@ -15,7 +14,6 @@ pipeline{
 '''
 }
 				}
-			}
 				stage('deploy')
 				{
 				    steps{
