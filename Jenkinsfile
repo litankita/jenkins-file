@@ -24,19 +24,19 @@ pipeline{
 		post{
 			success{
 				script{
-					mail bcc: '', body: 'it is a success', cc: '', from: '', replyTo: '', subject: '', to: 'sushreankita@gmail.com'
+					mail bcc: '', body: 'it is a success', cc: '', from: '', replyTo: '', subject: 'Regarding my_pipeline build', to: 'sushreankita@gmail.com'
 				}
 
 			}
 			failure{
 				script{
-						mail bcc: '', body: 'it is a failure', cc: '', from: '', replyTo: '', subject: '', to: 'sushreankita@gmail.com'
+						mail bcc: '', body: 'it is a success', cc: '', from: '', replyTo: '', subject: 'Regarding my_pipeline build', to: 'sushreankita@gmail.com'
 				}
 
 			}
 			always{
 				script{
-					mail bcc: '', body: 'my_pipeline is a executed', cc: '', from: '', replyTo: '', subject: '', to: 'sushreankita@gmail.com'
+					mail bcc: '', body: 'it is a success', cc: '', from: '', replyTo: '', subject: 'Regarding my_pipeline build', to: 'sushreankita@gmail.com'
 				}
 			}
 
